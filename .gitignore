@@ -16,6 +16,8 @@
 
 /.cache
 
+/dist
+
 /node_modules
 
 /.vscode
