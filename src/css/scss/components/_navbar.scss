@@ -1,0 +1,8 @@
+.navbar {
+  background-color: white;
+  &-nav {
+    justify-content: flex-end;
+    width: 100%;
+    // flex-direction: column;
+  }
+}

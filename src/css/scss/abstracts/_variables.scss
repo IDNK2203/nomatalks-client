@@ -1,52 +1,42 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
+// # Front-end Style Guide
 
-/// Regular font family
-/// @type List
-$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
-  "Helvetica", "Arial", sans-serif !default;
+// ## Colors
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-  "Monaco", monospace !default;
+// contact form colors
 
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
 
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+// Accent
+$Blue: hsl(248, 32%, 49%);
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+// Neutral
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
 
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+// ### Primary
 
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$Soft-Blue: hsl(231, 69%, 60%);
+$Soft-Red: hsl(0, 94%, 66%);
 
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
+// ### Neutral
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$Grayish-Blue: hsl(229, 8%, 60%);
+$Very-Dark-Blue: hsl(229, 31%, 21%);
+
+// ## Typography
+
+// ### Body Copy
+
+$Font-size: 18px;
+
+// ### Fonts
+
+$Family: "Rubik", sans-serif;
+// $Weights: 400, 500;
+
 $breakpoints: (
-  "small": 320px,
+  "small": 550px,
   "medium": 768px,
   "large": 1024px,
 ) !default;
-
-/// Relative or absolute URL where all assets are served from
-// @type String
-// @example scss - When using a CDN
-//   $base-url: 'http://cdn.example.com/assets/';
-$base-url: "/assets/" !default;
