@@ -3,14 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-:root {
-  font-size: $Font-size;
-  font-family: $Family;
-}
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 img {
   max-width: 100%;
@@ -20,6 +20,8 @@ ul {
 }
 body {
   text-align: center;
+  font-size: $Font-size;
+  font-family: $Family;
 }
 
 p {
@@ -27,12 +29,14 @@ p {
   font-size: 1.2rem;
 }
 
-.container {
+.container-custom {
   padding: 1.25rem 1.15rem;
-  max-width: 1180px;
+  max-width: 1250px;
   margin: 0rem auto;
 }
-
+small {
+  font-size: 70%;
+}
 // .bg-underlay {
 //   position: absolute;
 //   background-color: $Soft-Blue;
@@ -64,6 +68,3 @@ p {
 //     bottom: 0;
 //   }
 // }
-.logo-holder {
-  width: 148px;
-}

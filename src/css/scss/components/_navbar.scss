@@ -1,8 +1,16 @@
 .navbar {
+  .container {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
   background-color: white;
   &-nav {
     justify-content: flex-end;
     width: 100%;
     // flex-direction: column;
   }
+}
+
+.logo-holder {
+  width: 25px;
 }

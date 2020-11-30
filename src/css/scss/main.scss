@@ -11,13 +11,18 @@
 @import "base/base", "base/fonts";
 
 // 4. Layout-related sections
-@import "layout/header", "layout/footer";
+@import "layout/header", "layout/footer", "layout/posts";
 
 // 5. Components
-@import "components/button", "components/navbar";
+@import "components/button", "components/navbar", "components/carousel";
 
 // 6. Page-specific styles
-@import "pages/home";
+@import "pages/home", "pages/blog-details";
 
 // 7. Themes
 @import "themes/default";
+
+@import // Required Core Stylesheet
+  "../../../node_modules/@glidejs/glide/src/assets/sass/glide.core",
+  // Optional Theme Stylesheet
+  "../../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";

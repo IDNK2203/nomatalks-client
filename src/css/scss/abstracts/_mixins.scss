@@ -79,20 +79,9 @@
   justify-content: space-between;
   align-items: center;
 }
-@mixin mQ_mobile_very_small_only {
-  @media screen and (max-width: 330px) {
-    @content;
-  }
-}
 
 @mixin mQ_mobile_large {
   @media screen and (min-width: map-get($map:$breakpoints , $key:small )) {
-    @content;
-  }
-}
-
-@mixin mQ_mobile_only {
-  @media screen and (max-width: map-get($map:$breakpoints , $key:medium )) {
     @content;
   }
 }
@@ -105,6 +94,28 @@
 
 @mixin mQ_desktop_large {
   @media screen and (min-width: map-get($map:$breakpoints , $key:large )) {
+    @content;
+  }
+}
+
+@mixin mQ_mobile_very_small_only {
+  @media screen and (max-width: 330px) {
+    @content;
+  }
+}
+@mixin mQ_mobile_only {
+  @media screen and (max-width: map-get($map:$breakpoints , $key:small )) {
+    @content;
+  }
+}
+@mixin mQ_desktop_only {
+  @media screen and (max-width: map-get($map:$breakpoints , $key:medium )) {
+    @content;
+  }
+}
+
+@mixin mQ_desktop_large_only {
+  @media screen and (max-width: map-get($map:$breakpoints , $key:large )) {
     @content;
   }
 }

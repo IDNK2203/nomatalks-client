@@ -1,0 +1,61 @@
+.blog-details {
+  .container {
+    margin-top: 6rem;
+    text-align: left;
+    max-width: 900px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+  ol,
+  ul {
+    padding-left: 20px;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  &__heading {
+    margin: 1rem 0;
+  }
+  &__title {
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+    text-align: center;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop {
+    &__title {
+      font-size: 3rem;
+      padding: 1rem 0;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+  &__info {
+    font-style: italic;
+    color: #666;
+  }
+}
+.blog-details__info {
+  font-style: italic;
+  color: #666;
+  span {
+    padding-right: 2rem;
+  }
+}
+
+.blog-details__article {
+  a {
+    color: $Soft-Blue;
+    text-decoration: underline;
+  }
+}

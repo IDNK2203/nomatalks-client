@@ -13,14 +13,18 @@
     <!-- 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png"> -->
-
+    <script src="https://kit.fontawesome.com/3c76e6d008.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/main.c52e0fe2.css">
   <script src="/main.c52e0fe2.js"></script></head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+          <div class="logo-holder">
+            <img src="/noma-talks-logo.b99eb1f2.svg" alt="">
+          </div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,9 +33,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Digital Magazine</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 News
@@ -72,20 +76,9 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Inspired</a>
             </li>
           </ul>
-          <!-- <form class="form-inline">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form> -->
         </div>
       </div>
     </nav>
@@ -94,82 +87,226 @@
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <div class="overlay"></div>
               <li class="glide__slide">
-                <div class="blog-slide" style="background: url('/pic-1.8ecd1258.jpg');">
+                <div class="blog-slide">
+                  <div class="blog-slide__img-holder" style="background-image: url('/pic-3.ee723783.jpg')">
+                    <!-- <img src="./images/pic-1.jpg" alt="" /> -->
+                  </div>
+                  <div class="overlay"></div>
                   <div class="blog-slide__content">
-                    <p class="blog-slide__category">
-                      Entertainment
-                    </p>
-                    <h2>Blog Title 1</h2>
-                    <a href="#" class="btn btn-primary">Enjoy</a>
+                    <p class="blog-slide__category">Sports</p>
+                    <h2 class="h2">Top 10 ways to to survive a plane crash</h2>
+                    <a href="#" class="btn btn--primary">Enjoy</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div class="blog-slide">
+                  <div class="blog-slide__img-holder" style="background-image: url('/pic-1.8ecd1258.jpg')">
+                    <!-- <img src="./images/pic-2.jpg" alt="" /> -->
+                  </div>
+                  <div class="overlay"></div>
+                  <div class="blog-slide__content">
+                    <p class="blog-slide__category">Sports</p>
+                    <h2 class="h2">The Story of Stephen Hawking</h2>
+                    <a href="#" class="btn btn--primary">Enjoy</a>
                   </div>
                 </div>
               </li>
               <li class="glide__slide">
-                <div class="blog-slide" style="background: url('/pic-2.067b732f.jpg');">
+                <div class="blog-slide">
+                  <div class="blog-slide__img-holder" style="background-image: url('/pic-2.067b732f.jpg')">
+                    <!-- <img src="./images/pic-3.jpg" alt="" /> -->
+                  </div>
+                  <div class="overlay"></div>
                   <div class="blog-slide__content">
-                    <p class="blog-slide__category">
-                      Sports
-                    </p>
-                    <h2>Blog Title 2</h2>
-                    <a href="#" class="btn btn-primary">Enjoy</a>
+                    <p class="blog-slide__category">Sports</p>
+                    <h2 class="h2">Why ASUU won't call off the Strike</h2>
+                    <a href="#" class="btn btn--primary">Enjoy</a>
                   </div>
                 </div>
-                </li></ul></div>
-              
-              <li class="glide__slide">
-                <div class="blog-slide" style="background: url('/pic-3.ee723783.jpg');">
-                  <div class="blog-slide__content">
-                    <p class="blog-slide__category">
-                      News
-                    </p>
-                    <h2>Blog Title 3</h2>
-                    <a href="#" class="btn btn-primary">Enjoy</a>
-                  </div>
-                </div>
-                </li></div>
-              
-            
+              </li>
+            </ul>
           </div>
-        
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div>
         </div>
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-          <button class="glide__bullet" data-glide-dir="=0"></button>
-          <button class="glide__bullet" data-glide-dir="=1"></button>
-          <button class="glide__bullet" data-glide-dir="=2"></button>
-        </div>
-      
+      </div>
     </main>
 
     <!-- POST SECTION -->
-    <section class="post-container">
-      <div class="container">
-        <main>
-          <div class="form-container">
-            <form action="" method="get">
-
-            </form>   
+    <section class="posts">
+      <div class="container-custom">
+        <main class="main">
+          <div class="posts-heading">
+            <h2 class="posts__headline">Latest Posts</h2>
           </div>
           <div class="blog-post-holder">
-            <ul class="posts-list">
+            <ul class="post-list">
               <li class="post-list__item">
-
+                <a href="/pages\blog\blogs-details.html">
+                  <div class="post-list__img-holder">
+                    <img src="/pic-1.8ecd1258.jpg" alt="">
+                  </div>
+                  <div class="post-list__description">
+                    <small class="post-list__category"> Entertainment </small>
+                    <h3 class="post-list__title">
+                      Why ASUU won't call off the Strike
+                    </h3>
+                    <p class="post-list__snippet">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem obcaecati eaque ullam architecto?
+                    </p>
+                    <small class="post-list__publishedAt"> May 3, 1999 </small>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list__item">
+                <a href="/pages\blog\blogs-details.html">
+                  <div class="post-list__img-holder">
+                    <img src="/pic-1.8ecd1258.jpg" alt="">
+                  </div>
+                  <div class="post-list__description">
+                    <small class="post-list__category"> Entertainment </small>
+                    <h3 class="post-list__title">
+                      Why ASUU won't call off the Strike
+                    </h3>
+                    <p class="post-list__snippet">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem obcaecati eaque ullam architecto?
+                    </p>
+                    <small class="post-list__publishedAt">publisted at : May 3, 1999
+                    </small>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list__item">
+                <a href="/pages\blog\blogs-details.html">
+                  <div class="post-list__img-holder">
+                    <img src="/pic-1.8ecd1258.jpg" alt="">
+                  </div>
+                  <div class="post-list__description">
+                    <small class="post-list__category"> Entertainment </small>
+                    <h3 class="post-list__title">
+                      Why ASUU won't call off the Strike
+                    </h3>
+                    <p class="post-list__snippet">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem obcaecati eaque ullam architecto?
+                    </p>
+                    <small class="post-list__publishedAt"> May 3, 1999 </small>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list__item">
+                <a href="/pages\blog\blogs-details.html">
+                  <div class="post-list__img-holder">
+                    <img src="/pic-1.8ecd1258.jpg" alt="">
+                  </div>
+                  <div class="post-list__description">
+                    <small class="post-list__category"> Entertainment </small>
+                    <h3 class="post-list__title">
+                      Why ASUU won't call off the Strike
+                    </h3>
+                    <p class="post-list__snippet">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem obcaecati eaque ullam architecto?
+                    </p>
+                    <small class="post-list__publishedAt"> May 3, 1999 </small>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list__item">
+                <a href="/pages\blog\blogs-details.html">
+                  <div class="post-list__img-holder">
+                    <img src="/pic-1.8ecd1258.jpg" alt="">
+                  </div>
+                  <div class="post-list__description">
+                    <small class="post-list__category"> Entertainment </small>
+                    <h3 class="post-list__title">
+                      Why ASUU won't call off the Strike
+                    </h3>
+                    <p class="post-list__snippet">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem obcaecati eaque ullam architecto?
+                    </p>
+                    <small class="post-list__publishedAt"> May 3, 1999 </small>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list__item">
+                <a href="/pages\blog\blogs-details.html">
+                  <div class="post-list__img-holder">
+                    <img src="/pic-1.8ecd1258.jpg" alt="">
+                  </div>
+                  <div class="post-list__description">
+                    <small class="post-list__category"> Entertainment </small>
+                    <h3 class="post-list__title">
+                      Why ASUU won't call off the Strike
+                    </h3>
+                    <p class="post-list__snippet">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem obcaecati eaque ullam architecto?
+                    </p>
+                    <small class="post-list__publishedAt"> May 3, 1999 </small>
+                  </div>
+                </a>
               </li>
             </ul>
-          </div>          
+          </div>
         </main>
-        <aside>
-
+        <aside class="aside">
+          <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+          <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </aside>
       </div>
     </section>
-    <footer>
-      <div class="container">
-
+    <footer class="footer">
+      <div class="container footer">
+        <div class="logo-holder">
+          <a href="#" class="nav__link">
+            <img src="/noma-talks-logo.b99eb1f2.svg" alt="Noma talks brand logo">
+          </a>
+        </div>
+        <nav class="nav nav--secondary">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Privacy Policy</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav__list nav__list--socals">
+          <li class="nav__item">
+            <a href="#" class="nav__link"><i class="fab fa-twitter"></i> </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"><i class="fab fa-facebook"></i> </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"><i class="fab fa-instagram"></i> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container container--copy-right">
+        <small>&copy; Copyright 2018, Nomatalks</small>
       </div>
     </footer>
 
