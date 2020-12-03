@@ -34,7 +34,8 @@
   @include mQ_desktop {
     &__title {
       font-size: 3rem;
-      padding: 1rem 0;
+      // padding: 1rem 0;
+      text-align: left;
     }
     &__supporting-copy {
       font-size: 1.05rem;

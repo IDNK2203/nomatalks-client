@@ -11648,7 +11648,7 @@ small {
 @media screen and (min-width: 768px) {
   .blog-details__title {
     font-size: 3rem;
-    padding: 1rem 0;
+    text-align: left;
   }
   .blog-details__supporting-copy {
     font-size: 1.05rem;
