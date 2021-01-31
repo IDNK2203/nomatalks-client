@@ -1,4 +1,5 @@
 .navbar {
+  box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.23);
   .container {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
@@ -7,10 +8,17 @@
   &-nav {
     justify-content: flex-end;
     width: 100%;
-    // flex-direction: column;
+  }
+}
+.nav-link {
+  color: $Very-Dark-Blue !important;
+  font-weight: 500;
+  &:hover {
+    color: #17a2b8 !important;
+    transform: scale(1.05) !important;
   }
 }
 
 .logo-holder {
-  width: 25px;
+  width: 32px;
 }

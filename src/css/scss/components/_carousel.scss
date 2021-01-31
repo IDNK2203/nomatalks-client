@@ -19,11 +19,15 @@
     background: rgba(0, 0, 0, 0.347);
     z-index: 99;
   }
+  &__category {
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0;
+  }
   &__content {
     position: absolute;
     color: white;
-    max-width: 35rem;
-    min-width: 17.5rem;
+    width: auto;
     z-index: 100;
     left: 50%;
     top: 25%;
@@ -64,7 +68,7 @@
       top: 15%;
       transform: translateX(-50%);
       .h2 {
-        font-size: 3rem;
+        font-size: 2.75rem;
       }
     }
   }

@@ -3,6 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  font-size: $Font-size;
+  font-family: $Family;
+  display: flex;
+  flex-direction: column;
+}
+.page-content {
+  flex: 1;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -18,15 +32,11 @@ img {
 ul {
   list-style-type: none;
 }
-body {
-  text-align: center;
-  font-size: $Font-size;
-  font-family: $Family;
-}
 
 p {
-  padding: 1rem 0;
-  font-size: 1.2rem;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
 .container-custom {
@@ -34,37 +44,18 @@ p {
   max-width: 1250px;
   margin: 0rem auto;
 }
+.mt-6 {
+  margin: 6rem auto 0;
+}
 small {
   font-size: 70%;
 }
-// .bg-underlay {
-//   position: absolute;
-//   background-color: $Soft-Blue;
-//   z-index: -1;
-// }
-// .bg-underlay--header {
-//   height: 40%;
-//   width: 60%;
-//   bottom: 55%;
-//   right: 0;
-//   border-top-left-radius: 50%;
-//   border-bottom-left-radius: 50%;
-//   @include mQ_desktop {
-//     height: 70%;
-//     width: 40%;
-//     bottom: 0;
-//   }
-// }
-// .bg-underlay--features {
-//   height: 25%;
-//   width: 65%;
-//   bottom: 30%;
-//   left: 0;
-//   border-top-right-radius: 50%;
-//   border-bottom-right-radius: 50%;
-//   @include mQ_desktop {
-//     height: 45%;
-//     width: 45%;
-//     bottom: 0;
-//   }
-// }
+.con-xl {
+  max-width: 1280px;
+}
+.con-lg {
+  max-width: 900px;
+}
+.con-md {
+  max-width: 1280px;
+}

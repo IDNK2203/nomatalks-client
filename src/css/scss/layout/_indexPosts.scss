@@ -1,0 +1,117 @@
+.posts {
+  &__heading {
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__headline {
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop {
+    &__headline {
+      font-size: 3rem;
+      padding: 1rem 0;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+  .main {
+    margin: 2rem 0;
+  }
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  &__item {
+    margin-bottom: 0.5rem;
+    transition: transform 0.25s linear;
+  }
+  &__img-holder {
+    border-radius: 10px;
+    img {
+      max-height: 19rem;
+    }
+  }
+  &__description {
+    min-height: 10rem;
+    text-align: left;
+    padding: 1rem;
+    margin-top: 0.25rem;
+    border: 3px solid #e9ecef;
+    border-radius: 0.5rem;
+    min-height: 13rem;
+    box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.23);
+  }
+  &__category {
+    color: white;
+    background: #000;
+    padding: 0.25rem;
+  }
+  &__category,
+  &__ert,
+  &__publishedAt {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    max-height: 4rem;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+  }
+  &__snippet {
+    padding: 0;
+    margin: 0;
+    max-height: 8rem;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+  }
+}
+
+@include mQ_mobile_large {
+  .post-list {
+    grid-template-columns: 1fr 1fr;
+    &__img-holder {
+      border-radius: 10px;
+      img {
+        max-height: 13rem;
+      }
+    }
+  }
+}
+@include mQ_desktop {
+  .post-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    &__img-holder {
+      border-radius: 10px;
+      img {
+        max-height: 16rem;
+      }
+    }
+  }
+}
+
+.post-list__item {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
