@@ -39,11 +39,18 @@
   &__info {
     font-style: italic;
     color: #666;
+
     span {
       padding-right: 1rem;
       font-weight: 700;
       font-size: 0.75rem;
     }
+  }
+  .whatsapp_share {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    font-weight: 400;
+    color: green;
   }
 }
 @include mQ_desktop {

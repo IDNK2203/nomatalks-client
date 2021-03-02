@@ -49,3 +49,12 @@
     border: 2px solid $Soft-Red;
   }
 }
+.btn--admin {
+  position: fixed;
+  z-index: 1000;
+  right: 5%;
+  bottom: 5%;
+  .fa {
+    font-size: 2rem;
+  }
+}

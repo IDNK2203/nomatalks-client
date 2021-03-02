@@ -11389,8 +11389,12 @@ p {
   margin: 0rem auto;
 }
 
-.mt-6 {
-  margin: 6rem auto 0;
+.mtb-6 {
+  margin: 6rem auto 4rem;
+}
+
+.mtb-8 {
+  margin: 8rem auto 4rem;
 }
 
 small {
@@ -11937,6 +11941,17 @@ footer hr {
   border: 2px solid #fa5757;
 }
 
+.btn--admin {
+  position: fixed;
+  z-index: 1000;
+  right: 5%;
+  bottom: 5%;
+}
+
+.btn--admin .fa {
+  font-size: 2rem;
+}
+
 .navbar {
   -webkit-box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.23);
           box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.23);
@@ -12112,6 +12127,13 @@ footer hr {
   padding-right: 1rem;
   font-weight: 700;
   font-size: 0.75rem;
+}
+
+.blog-details .whatsapp_share {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  font-weight: 400;
+  color: green;
 }
 
 @media screen and (min-width: 768px) {
